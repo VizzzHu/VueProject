@@ -1,7 +1,7 @@
 <template>
 	<div class="quotes-display">
 		<span>Quotes display</span>
-		<div v-for="quote in quotes" :key="quote" class="quote-box">{{ quote }}</div>
+		<div v-for="(quote, index) in quotes" :key="index" class="quote-box">{{ quote }}</div>
 	</div>
 	
 </template>
